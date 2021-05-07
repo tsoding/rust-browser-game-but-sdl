@@ -1,4 +1,4 @@
-# [rust-browser-game] but native and rendered with SDL in C
+# [rust-browser-game] but native and rendered with SDL in C without the Browser
 
 The original idea of [rust-browser-game] is that the `game.wasm` module is completely self-contained. It does not even know that it is running in the browser. It just renders frames into a chunk of memory that is called `Display` and does not care where those frames go.
 
