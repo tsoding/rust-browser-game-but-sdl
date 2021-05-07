@@ -4,9 +4,6 @@
 #include <stdbool.h>
 #include "./game.h"
 
-#define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "./stb_image_write.h"
-
 #include <SDL.h>
 
 void sdl_check_code(int code)
