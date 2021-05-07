@@ -4,4 +4,20 @@ The original idea of [rust-browser-game] is that the `game.wasm` module is compl
 
 So, theoretically you can recompile that game module into an ELF x86_64 object for Linux and link it with a C program that display those frames using [SDL](https://www.libsdl.org/). And this is exactly what we are doing in here.
 
+## Quick Start
+
+Dependencies:
+- [Rust]
+- [gcc] or [clang]
+- [SDL2]
+
+```console
+$ make
+$ ./rust-browser-game-but-sdl
+```
+
 [rust-browser-game]: https://github.com/tsoding/rust-browser-game
+[Rust]: https://rust-lang.org/
+[gcc]: https://gcc.gnu.org/
+[clang]: https://clang.llvm.org/
+[SDL2]: https://www.libsdl.org/
