@@ -61,6 +61,8 @@ int main(void)
                 display_width,
                 display_height));
 
+    const size_t fps = 30;
+
     bool quit = false;
     while (!quit) {
         SDL_Event event = {0};
@@ -90,7 +92,7 @@ int main(void)
             }
         }
 
-        next_frame(1.0f / 60.0f);
+        next_frame(1.0f / (float) fps);
 
         {
 
@@ -121,7 +123,7 @@ int main(void)
 
         SDL_RenderPresent(renderer);
 
-        SDL_Delay(1000 / 60);
+        SDL_Delay(1000 / fps);
     }
 
     SDL_Quit();
